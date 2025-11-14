@@ -201,7 +201,7 @@ input {
     margin-bottom: 10px;
 }
 
-.course__counter-line, 
+.course__counter-line,
 .course__progress-label {
     color: #FFFFFF40;
 }
@@ -249,6 +249,7 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     height: 6px;
+    transition: width 2s ease;
 }
 
 progress {
@@ -259,6 +260,7 @@ progress {
 progress::-moz-progress-value {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     height: 6px;
+    transition: width 2s ease;
 }
 
 
@@ -383,7 +385,7 @@ progress::-moz-progress-value {
 }
 
 .program-line {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
     width: 750px;
 }

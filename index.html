@@ -14,6 +14,7 @@
     <script src="./js/smoothScroll.js" defer></script>
     <script src="./js/timer.js" defer></script>
     <script src="./js/sendForm.js" defer></script>
+    <script src="./js/animateValue.js" defer></script>
 </head>
 
 <body>
@@ -77,14 +78,16 @@
                             <span class="course__number">190</span>
                         </div>
                     </div>
-                    <div class="course__progress">
+                    <div class="course__progress" id="earned-block">
                         <div class="course__progress-label">
                             <span>Заработано учениками:</span>
-                            <span class="course__number">400 000₽</span>
+                            <span class="course__number" id="earned">0₽</span>
                         </div>
+
                         <div class="course__progress-element">
-                            <progress min="0" max="1000000" value="400000" />
+                            <progress id="earned-progress" min="0" max="1000000" value="0"></progress>
                         </div>
+
                         <div class="course__progress-minmax">
                             <span>0₽</span>
                             <span>1 000 000₽</span>
